@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Check out our new track featuring Coleen Brookes called Deliver Me. The track has had support from DJ Lee Butler and has been played several times on Radio City.">
+    <meta name="keywords" content="Novus Music, Coleen Brookes, Deliver Me, Played on Radio City, Lee Butler, Gary Brookes, Official Novus, Novus Liverpool">
+    <meta name="author" content="Alex Scott">
+    <meta property="og:url" content="http://novusmusic.uk/" />
+    <meta property="og:image" content="http://novusmusic.uk/assets/novus-full-left.jpg" >
+    <meta property="og:description" content="Check out our new track featuring Coleen Brookes called Deliver Me. The track has had support from DJ Lee Butler and has been played several times on Radio City.">
+    <meta property="og:title" content="Novus Music">
+    <meta property="og:type" content="website" />
+  <title><%= content_for?(:title) ? yield(:title) : "Novus Music" %></title>
+  <%= stylesheet_link_tag    'welcome', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render 'layouts/navigation' %>
+  <%= yield %>
+  <%= render 'layouts/social' %>
+  <%= javascript_include_tag 'welcome', 'data-turbolinks-track' => true %>
+
+</body>
+</html>
